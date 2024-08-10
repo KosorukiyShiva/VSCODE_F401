@@ -35,7 +35,7 @@ set(include_c_DIRS ${include_c_DIRS}
 	${CMAKE_CURRENT_SOURCE_DIR}/Inc
 )
 set(include_cxx_DIRS ${include_cxx_DIRS}
-    
+	${CMAKE_CURRENT_SOURCE_DIR}/Inc
 )
 set(include_asm_DIRS ${include_asm_DIRS}
     
