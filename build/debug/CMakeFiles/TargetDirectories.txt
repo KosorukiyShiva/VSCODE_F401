@@ -1,0 +1,3 @@
+C:/Users/Shiva/Documents/ST/VSCODE_F401-1/build/debug/CMakeFiles/test.dir
+C:/Users/Shiva/Documents/ST/VSCODE_F401-1/build/debug/CMakeFiles/edit_cache.dir
+C:/Users/Shiva/Documents/ST/VSCODE_F401-1/build/debug/CMakeFiles/rebuild_cache.dir

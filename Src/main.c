@@ -16,10 +16,8 @@
  ******************************************************************************
  */
 
-#include <stdbool.h>
-#include <stdint.h>
-#include "stm32f4xx.h"
-#include "stm32f401xc.h"
+#include "main.h"
+
 void ClockInit(void){
     RCC->CR |= (1 << RCC_CR_HSEON_Pos);
     __IO int StartUpCounter;
@@ -36,7 +34,7 @@ void ClockInit(void){
     RCC->CFGR |= (0x02 << RCC_CFGR_MCO2_Pos);
     RCC->CFGR |= (0x00 << RCC_CFGR_MCO2PRE_Pos);
     RCC->PLLCFGR |= (0x04 << RCC_PLLCFGR_PLLQ_Pos);
-    RCC->PLLCFGR |= (0x63 << RCC_PLLCFGR_PLLN_Pos)
+    RCC->PLLCFGR |= (0x63 << RCC_PLLCFGR_PLLN_Pos);
     RCC->PLLCFGR |= (0x00 << RCC_PLLCFGR_PLLP_Pos); 
     RCC->CR |= (1 << RCC_CR_PLLON_Pos);
     

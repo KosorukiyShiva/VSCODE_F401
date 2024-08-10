@@ -1,0 +1,4 @@
+# ninja log v5
+24	175	7450227842149653	CMakeFiles/test.dir/Startup/startup_stm32f401ccux.s.obj	98ce26e4c7eac53e
+18	409	7450227843826647	CMakeFiles/test.dir/Src/sysmem.c.obj	99b9aca0b3cb2b79
+13	797	7450227848292891	CMakeFiles/test.dir/Src/syscall.c.obj	bbdce3d216b0d195
