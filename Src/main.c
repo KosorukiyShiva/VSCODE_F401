@@ -20,6 +20,9 @@
 #include <stdint.h>
 #include "stm32f4xx.h"
 #include "stm32f401xc.h"
+void ClockInit(void){
+    RCC->CR |= (1 << RCC_CR_HSEON_Pos);
+}
 int main(void)
 {
     /* Loop forever */
