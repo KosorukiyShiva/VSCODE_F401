@@ -1,6 +1,19 @@
 # ninja log v5
-24	175	7450227842149653	CMakeFiles/test.dir/Startup/startup_stm32f401ccux.s.obj	98ce26e4c7eac53e
-18	409	7450227843826647	CMakeFiles/test.dir/Src/sysmem.c.obj	99b9aca0b3cb2b79
-13	797	7450227848292891	CMakeFiles/test.dir/Src/syscall.c.obj	bbdce3d216b0d195
-10	313	7450248863462280	CMakeFiles/test.dir/Src/main.c.obj	480fd2c2158ac08d
-314	953	7450248867296188	test.elf	5078d24e6c28ec4f
+59	286	7451095698998060	CMakeFiles/test.dir/Startup/startup_stm32f401ccux.s.obj	98ce26e4c7eac53e
+55	377	7451095699923882	CMakeFiles/test.dir/Src/sysmem.c.obj	91e8f66ca1481fd9
+50	683	7451095702993535	CMakeFiles/test.dir/Src/syscall.c.obj	987f72ffde0bc243
+14	440	7451095700543916	CMakeFiles/test.dir/Src/main.c.obj	c8ff942febc67509
+683	1228	7451095706926993	test.elf	5078d24e6c28ec4f
+48	61	0	clean	2fb112b3f9e8845f
+3	15	0	clean	2fb112b3f9e8845f
+28	115	7451095980566809	CMakeFiles/test.dir/Startup/startup_stm32f401ccux.s.obj	98ce26e4c7eac53e
+24	168	7451095981116835	CMakeFiles/test.dir/Src/sysmem.c.obj	91e8f66ca1481fd9
+20	256	7451095981968255	CMakeFiles/test.dir/Src/syscall.c.obj	987f72ffde0bc243
+14	262	7451095982028252	CMakeFiles/test.dir/Src/main.c.obj	c8ff942febc67509
+262	490	7451095983417206	test.elf	5078d24e6c28ec4f
+3	16	0	clean	2fb112b3f9e8845f
+27	116	7451098180545229	CMakeFiles/test.dir/Startup/startup_stm32f401ccux.s.obj	98ce26e4c7eac53e
+23	166	7451098181055275	CMakeFiles/test.dir/Src/sysmem.c.obj	91e8f66ca1481fd9
+12	259	7451098181955341	CMakeFiles/test.dir/Src/main.c.obj	c8ff942febc67509
+18	263	7451098182002448	CMakeFiles/test.dir/Src/syscall.c.obj	987f72ffde0bc243
+263	480	7451098183293762	test.elf	5078d24e6c28ec4f

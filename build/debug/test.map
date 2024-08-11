@@ -906,9 +906,9 @@ LOAD C:/ST/STM32CubeCLT_1.16.0/GNU-tools-for-STM32/bin/../lib/gcc/arm-none-eabi/
  .debug_macro   0x000022bd     0xb86c CMakeFiles/test.dir/Src/main.c.obj
  .debug_macro   0x0000db29       0x6d CMakeFiles/test.dir/Src/main.c.obj
 
-.debug_line     0x00000000      0x5e6
- .debug_line    0x00000000      0x56b CMakeFiles/test.dir/Src/main.c.obj
- .debug_line    0x0000056b       0x7b CMakeFiles/test.dir/Startup/startup_stm32f401ccux.s.obj
+.debug_line     0x00000000      0x616
+ .debug_line    0x00000000      0x59b CMakeFiles/test.dir/Src/main.c.obj
+ .debug_line    0x0000059b       0x7b CMakeFiles/test.dir/Startup/startup_stm32f401ccux.s.obj
 
 .debug_str      0x00000000    0x4f7f6
  .debug_str     0x00000000    0x4f790 CMakeFiles/test.dir/Src/main.c.obj
