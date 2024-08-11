@@ -136,6 +136,10 @@
 				{
 					"backtrace" : 6,
 					"path" : "C:/Users/Shiva/Documents/ST/VSCODE_F401-1/Inc"
+				},
+				{
+					"backtrace" : 6,
+					"path" : "C:/Users/Shiva/Documents/ST/VSCODE_F401-1/CMSIS"
 				}
 			],
 			"language" : "C",

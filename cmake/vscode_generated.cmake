@@ -31,11 +31,12 @@ set(sources_SRCS ${sources_SRCS}
 
 # Include directories
 set(include_c_DIRS ${include_c_DIRS}
-    
 	${CMAKE_CURRENT_SOURCE_DIR}/Inc
+	${CMAKE_CURRENT_SOURCE_DIR}/CMSIS
 )
 set(include_cxx_DIRS ${include_cxx_DIRS}
 	${CMAKE_CURRENT_SOURCE_DIR}/Inc
+	${CMAKE_CURRENT_SOURCE_DIR}/CMSIS
 )
 set(include_asm_DIRS ${include_asm_DIRS}
     

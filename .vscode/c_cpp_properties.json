@@ -7,7 +7,9 @@
             "intelliSenseMode": "${default}",
             "includePath": [
                 "${default}",
-                "${workspaceFolder}/Inc"
+                "${workspaceFolder}/Inc",
+                "${workspaceFolder}/CMSIS",
+                "${workspaceFolder}/CMSIS"
             ]
         }
     ]

@@ -53,7 +53,7 @@ build CMakeFiles/test.dir/Src/main.c.obj: C_COMPILER__test_unscanned_Debug C$:/U
   DEFINES = -DDEBUG
   DEP_FILE = CMakeFiles\test.dir\Src\main.c.obj.d
   FLAGS = -fdata-sections -ffunction-sections -Wl,--gc-sections -g -std=gnu11 -mthumb -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -Wall -Wextra -Wpedantic -Wno-unused-parameter -Og -g3 -ggdb
-  INCLUDES = -IC:/Users/Shiva/Documents/ST/VSCODE_F401-1/Inc
+  INCLUDES = -IC:/Users/Shiva/Documents/ST/VSCODE_F401-1/Inc -IC:/Users/Shiva/Documents/ST/VSCODE_F401-1/CMSIS
   OBJECT_DIR = CMakeFiles\test.dir
   OBJECT_FILE_DIR = CMakeFiles\test.dir\Src
 
@@ -61,7 +61,7 @@ build CMakeFiles/test.dir/Src/syscall.c.obj: C_COMPILER__test_unscanned_Debug C$
   DEFINES = -DDEBUG
   DEP_FILE = CMakeFiles\test.dir\Src\syscall.c.obj.d
   FLAGS = -fdata-sections -ffunction-sections -Wl,--gc-sections -g -std=gnu11 -mthumb -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -Wall -Wextra -Wpedantic -Wno-unused-parameter -Og -g3 -ggdb
-  INCLUDES = -IC:/Users/Shiva/Documents/ST/VSCODE_F401-1/Inc
+  INCLUDES = -IC:/Users/Shiva/Documents/ST/VSCODE_F401-1/Inc -IC:/Users/Shiva/Documents/ST/VSCODE_F401-1/CMSIS
   OBJECT_DIR = CMakeFiles\test.dir
   OBJECT_FILE_DIR = CMakeFiles\test.dir\Src
 
@@ -69,7 +69,7 @@ build CMakeFiles/test.dir/Src/sysmem.c.obj: C_COMPILER__test_unscanned_Debug C$:
   DEFINES = -DDEBUG
   DEP_FILE = CMakeFiles\test.dir\Src\sysmem.c.obj.d
   FLAGS = -fdata-sections -ffunction-sections -Wl,--gc-sections -g -std=gnu11 -mthumb -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -Wall -Wextra -Wpedantic -Wno-unused-parameter -Og -g3 -ggdb
-  INCLUDES = -IC:/Users/Shiva/Documents/ST/VSCODE_F401-1/Inc
+  INCLUDES = -IC:/Users/Shiva/Documents/ST/VSCODE_F401-1/Inc -IC:/Users/Shiva/Documents/ST/VSCODE_F401-1/CMSIS
   OBJECT_DIR = CMakeFiles\test.dir
   OBJECT_FILE_DIR = CMakeFiles\test.dir\Src
 
