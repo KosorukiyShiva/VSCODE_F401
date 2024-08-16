@@ -18,63 +18,93 @@
 
 #include "main.h"
 
+//void ClockInit(void){
+//    RCC->CR |= (1 << RCC_CR_HSEON_Pos);
+//    __IO int StartUpCounter;
+//    for (StartUpCounter = 0;     ; StartUpCounter++)
+//    {
+//        if(RCC->CR & (1 << RCC_CR_HSERDY_Pos)){
+//            break;
+//        }
+//        if(StartUpCounter > 0x1000){
+//            RCC->CR &= ~(1 << RCC_CR_HSEON_Pos);
+//        }
+//    }
+//    
+//    RCC->CFGR |= (0x02 << RCC_CFGR_MCO2_Pos);
+//    RCC->CFGR |= (0x00 << RCC_CFGR_MCO2PRE_Pos);
+//    RCC->PLLCFGR |= (0x04 << RCC_PLLCFGR_PLLQ_Pos);
+//    RCC->PLLCFGR |= (0x63 << RCC_PLLCFGR_PLLN_Pos);
+//    RCC->PLLCFGR |= (0x00 << RCC_PLLCFGR_PLLP_Pos); 
+//    RCC->CR |= (1 << RCC_CR_PLLON_Pos);
+//    
+//    for (StartUpCounter = 0;    ; StartUpCounter++)
+//    {
+//        if(RCC->CR & (1 << RCC_CR_PLLON_Pos)){
+//            break;
+//        }
+//        if(StartUpCounter > 0x1000){
+//            RCC->CR &= ~(1 << RCC_CR_PLLON_Pos);
+//            RCC->CR &= ~(1 << RCC_CR_HSEON_Pos); 
+//        }
+//    }
+//    
+//    FLASH->ACR |= (0x02 << FLASH_ACR_LATENCY_Pos);
+//    
+//    RCC->CFGR |= (0x00 << RCC_CFGR_PPRE1_Pos);
+//    RCC->CFGR |= (0x00 << RCC_CFGR_PPRE2_Pos);
+//    RCC->CFGR |= (0x00 << RCC_CFGR_HPRE_Pos);
+//    
+//    while ((RCC->CFGR & RCC_CFGR_SWS_Msk) != (0x02 << RCC_CFGR_SWS_Pos)){}
+//    RCC->CR &= ~(1 << RCC_CR_HSION_Pos);
+//    
+//    return 0;    
+//}
+//
+//void PC13LED(void){
+//    RCC->AHB1ENR |= (1 << RCC_AHB1ENR_GPIOCEN_Pos);
+//	GPIOC->MODER &= ~(GPIO_MODER_MODER13);
+//	GPIOC->MODER |= (0x02 << GPIO_MODER_MODER13_Pos);
+//	GPIOC->OTYPER &= ~(GPIO_OTYPER_OT13);`
+//	GPIOC->PUPDR &= ~(GPIO_PUPDR_PUPD13);
+//}
+//
+//void PC13LEDHi(void){
+//    GPIOC->BSRR |= (1<<13);
+//}
+//
+//void PC13LEDLow(void){
+//    GPIOC->BSRR |= ~(1<<13);
+//}
+
 void ClockInit(void){
+    //RCC->CR = 0x0000XX81;
+    RCC->CR |= (1 << RCC_CR_HSION_Pos);
     RCC->CR |= (1 << RCC_CR_HSEON_Pos);
-    __IO int StartUpCounter;
-    for (StartUpCounter = 0;     ; StartUpCounter++)
+    __IO int StrtUpcntr;
+    for (StrtUpcntr = 0 ;    ;   StrtUpcntr++)
     {
-        if(RCC->CR & (1 << RCC_CR_HSERDY_Pos)){
-            break;
+        if(RCC->CR & (1 << RCC_CR_HSIRDY_Pos))break;
+        if(StrtUpcntr > 0x1000){
+            RCC->CR &= ~(1 << RCC_CR_HSION_Pos);
+            return 1;
         }
-        if(StartUpCounter > 0x1000){
+    }
+    for (StrtUpcntr = 0 ;    ;   StrtUpcntr++)
+    {
+        if(RCC->CR & (1 << RCC_CR_HSERDY_Pos))break;
+        if(StrtUpcntr > 0x1000){
+            RCC->CR &= ~(1 << RCC_CR_HSION_Pos);
             RCC->CR &= ~(1 << RCC_CR_HSEON_Pos);
+            return 1;
         }
     }
-    
-    RCC->CFGR |= (0x02 << RCC_CFGR_MCO2_Pos);
-    RCC->CFGR |= (0x00 << RCC_CFGR_MCO2PRE_Pos);
-    RCC->PLLCFGR |= (0x04 << RCC_PLLCFGR_PLLQ_Pos);
-    RCC->PLLCFGR |= (0x63 << RCC_PLLCFGR_PLLN_Pos);
-    RCC->PLLCFGR |= (0x00 << RCC_PLLCFGR_PLLP_Pos); 
-    RCC->CR |= (1 << RCC_CR_PLLON_Pos);
-    
-    for (StartUpCounter = 0;    ; StartUpCounter++)
-    {
-        if(RCC->CR & (1 << RCC_CR_PLLON_Pos)){
-            break;
-        }
-        if(StartUpCounter > 0x1000){
-            RCC->CR &= ~(1 << RCC_CR_PLLON_Pos);
-            RCC->CR &= ~(1 << RCC_CR_HSEON_Pos); 
-        }
-    }
-    
-    FLASH->ACR |= (0x02 << FLASH_ACR_LATENCY_Pos);
-    
-    RCC->CFGR |= (0x00 << RCC_CFGR_PPRE1_Pos);
-    RCC->CFGR |= (0x00 << RCC_CFGR_PPRE2_Pos);
-    RCC->CFGR |= (0x00 << RCC_CFGR_HPRE_Pos);
-    
-    while ((RCC->CFGR & RCC_CFGR_SWS_Msk) != (0x02 << RCC_CFGR_SWS_Pos)){}
-    RCC->CR &= ~(1 << RCC_CR_HSION_Pos);
-    
-    return 0;    
-}
+    RCC->PLLCFGR = 0x24003010;
+    RCC->PLLCFGR |= (1 << RCC_PLLCFGR_PLLSRC_Pos); 
+    RCC->PLLCFGR |= (0x192 << RCC_PLLCFGR_PLLN_Pos);
+    RCC->PLLCFGR |= (0x08 << RCC_PLLCFGR_PLLM_Pos);
+    RCC->PLLCFGR |= (0x03 << RCC_PLLCFGR_PLLP_Pos);
 
-void PC13LED(void){
-    RCC->AHB1ENR |= (1 << RCC_AHB1ENR_GPIOCEN_Pos);
-	GPIOC->MODER &= ~(GPIO_MODER_MODER13);
-	GPIOC->MODER |= (0x02 << GPIO_MODER_MODER13_Pos);
-	GPIOC->OTYPER &= ~(GPIO_OTYPER_OT13);
-	GPIOC->PUPDR &= ~(GPIO_PUPDR_PUPD13);
-}
-
-void PC13LEDHi(void){
-    GPIOC->BSRR |= (1<<13);
-}
-
-void PC13LEDLow(void){
-    GPIOC->BSRR |= ~(1<<13);
 }
 
 int main(void)
