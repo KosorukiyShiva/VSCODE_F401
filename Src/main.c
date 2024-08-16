@@ -92,18 +92,49 @@ void ClockInit(void){
     }
     for (StrtUpcntr = 0 ;    ;   StrtUpcntr++)
     {
-        if(RCC->CR & (1 << RCC_CR_HSERDY_Pos))break;
+        if(RCC->CR & (1 << RCC_CR_HSERDY_Pos)){
+            RCC->CR |= ~(1 << RCC_CR_HSION_Pos);
+            break;
+            }
         if(StrtUpcntr > 0x1000){
             RCC->CR &= ~(1 << RCC_CR_HSION_Pos);
             RCC->CR &= ~(1 << RCC_CR_HSEON_Pos);
             return 1;
         }
     }
-    RCC->PLLCFGR = 0x24003010;
+    RCC->PLLCFGR = 0x24003010;              //see EASYPLL
     RCC->PLLCFGR |= (1 << RCC_PLLCFGR_PLLSRC_Pos); 
     RCC->PLLCFGR |= (0x192 << RCC_PLLCFGR_PLLN_Pos);
     RCC->PLLCFGR |= (0x08 << RCC_PLLCFGR_PLLM_Pos);
     RCC->PLLCFGR |= (0x03 << RCC_PLLCFGR_PLLP_Pos);
+    FLASH->ACR = 0x00000000;
+    FLASH->ACR |= (0x02 << FLASH_ACR_LATENCY_Pos);
+    RCC->CR |= (1 << RCC_CR_PLLON_Pos);
+    for(StrtUpcntr = 0; ;   StrtUpcntr++){
+        if (1 & (1 << RCC_CR_PLLRDY_Pos)){
+            break;
+        }
+        if(StrtUpcntr > 0x1000){
+            RCC->CR &= ~(1 << RCC_CR_PLLON_Pos);
+            RCC->CR &= ~(1 << RCC_CR_HSION_Pos);
+            return 1;
+        }
+    }
+    RCC->CFGR = 0x00000000;
+    RCC->CFGR |= (0x00 << RCC_CFGR_HPRE_Pos);
+    RCC->CFGR |= (0x00 << RCC_CFGR_PPRE2_Pos);
+    RCC->CFGR |= (0x02 << RCC_CFGR_SW_Pos);
+    for(StrtUpcntr = 0; ; StrtUpcntr++){
+        if(0x02 & (0x02 << RCC_CFGR_SWS_Pos)){
+            break;
+        }
+        if (StrtUpcntr > 0x1000){
+            RCC->CFGR &= ~(0x02 << RCC_CFGR_SW_Pos);
+            RCC->CR &= ~(1 << RCC_CR_PLLON_Pos);
+            RCC->CR &= ~(1 << RCC_CR_HSION_Pos);
+            return 1;
+        }
+    }
 
 }
 
