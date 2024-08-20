@@ -78,7 +78,22 @@ void PC13LEDLow(void){
 }
 
 void ClockInit(void){
-    //RCC->CR = 0x00006981;
+    RCC->CR &= ~(1 << RCC_CR_PLLON_Pos);
+    RCC->CR &= ~(1 << RCC_CR_HSION_Pos);
+    RCC->CR &= ~(1 << RCC_CR_HSEON_Pos);
+    RCC->CR = 0x00006983;
+    RCC->PLLCFGR = 0x24003010;              //see EASYPLL
+    FLASH->ACR = 0x00000000;
+    RCC->CFGR = 0x00000000;
+    RCC->PLLCFGR |= (0x01 << RCC_PLLCFGR_PLLSRC_Pos);
+    RCC->PLLCFGR |= (0x192 << RCC_PLLCFGR_PLLN_Pos);
+    RCC->PLLCFGR |= (0x08 << RCC_PLLCFGR_PLLM_Pos);
+    RCC->PLLCFGR |= (0x03 << RCC_PLLCFGR_PLLP_Pos);
+    FLASH->ACR |= (0x02 << FLASH_ACR_LATENCY_Pos);
+    RCC->CFGR |= (0x00 << RCC_CFGR_HPRE_Pos);
+    RCC->CFGR |= (0x00 << RCC_CFGR_PPRE2_Pos);
+    RCC->CFGR |= (0x02 << RCC_CFGR_SW_Pos);
+    RCC->CR |= (1 << RCC_CR_PLLON_Pos);
     RCC->CR |= (1 << RCC_CR_HSION_Pos);
     RCC->CR |= (1 << RCC_CR_HSEON_Pos);
     __IO int StrtUpcntr;
@@ -102,14 +117,6 @@ void ClockInit(void){
             return 1;
         }
     }
-    RCC->PLLCFGR = 0x24003010;              //see EASYPLL
-    RCC->PLLCFGR |= (0x01 << RCC_PLLCFGR_PLLSRC_Pos); 
-    RCC->PLLCFGR |= (0x192 << RCC_PLLCFGR_PLLN_Pos);
-    RCC->PLLCFGR |= (0x08 << RCC_PLLCFGR_PLLM_Pos);
-    RCC->PLLCFGR |= (0x03 << RCC_PLLCFGR_PLLP_Pos);
-    FLASH->ACR = 0x00000000;
-    FLASH->ACR |= (0x02 << FLASH_ACR_LATENCY_Pos);
-    RCC->CR |= (1 << RCC_CR_PLLON_Pos);
     for(StrtUpcntr = 0; ;   StrtUpcntr++){
         if ((RCC->CR & RCC_CR_PLLRDY_Msk) & (0x01 << RCC_CR_PLLRDY_Pos))break;
         if(StrtUpcntr > 0x1000){
@@ -118,26 +125,9 @@ void ClockInit(void){
             return 1;
         }
     }
-    RCC->CFGR = 0x00000000;
-    RCC->CFGR |= (0x00 << RCC_CFGR_HPRE_Pos);
-    RCC->CFGR |= (0x00 << RCC_CFGR_PPRE2_Pos);
-    RCC->CFGR |= (0x02 << RCC_CFGR_SW_Pos);
     while ((RCC->CFGR & RCC_CFGR_SWS_Msk) != (0x02 << RCC_CFGR_SWS_Pos)){}
     RCC->CR &= ~(1 << RCC_CR_HSION_Pos);
     return 0;    
-    //for(StrtUpcntr = 0; ; StrtUpcntr++){
-    //    if(0x02 & (0x02 << RCC_CFGR_SWS_Pos)){
-    //        break;
-    //    }
-    //    if (StrtUpcntr > 0x1000){
-    //        RCC->CFGR &= ~(0x02 << RCC_CFGR_SW_Pos);
-    //        RCC->CR &= ~(1 << RCC_CR_PLLON_Pos);
-    //        RCC->CR &= ~(1 << RCC_CR_HSION_Pos);
-    //        return 1;
-    //    }
-    //}
-
-
 }
 
 int main(void)
@@ -146,8 +136,8 @@ int main(void)
     PC13LED();
 	for(    ;   ;   ){
         PC13LEDHi();
-        for (int i = 0; i < 0x4000; i++){}
+        for (int i = 0; i < 0x400000; i++){}
         PC13LEDLow();
-        for (int i = 0; i < 0x4000; i++){}
+        for (int i = 0; i < 0x400000; i++){}
     }
 }
