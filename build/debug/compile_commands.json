@@ -1,6 +1,12 @@
 [
 {
   "directory": "C:/Users/Shiva/Documents/ST/VSCODE_F401-1/build/debug",
+  "command": "C:\\ST\\STM32CubeCLT_1.16.0\\GNU-tools-for-STM32\\bin\\arm-none-eabi-gcc.exe -DDEBUG -IC:/Users/Shiva/Documents/ST/VSCODE_F401-1/Inc -IC:/Users/Shiva/Documents/ST/VSCODE_F401-1/CMSIS -fdata-sections -ffunction-sections -Wl,--gc-sections -g -std=gnu11 -mthumb -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -Wall -Wextra -Wpedantic -Wno-unused-parameter -Og -g3 -ggdb -o CMakeFiles\\test.dir\\Src\\fnc.c.obj -c C:\\Users\\Shiva\\Documents\\ST\\VSCODE_F401-1\\Src\\fnc.c",
+  "file": "C:\\Users\\Shiva\\Documents\\ST\\VSCODE_F401-1\\Src\\fnc.c",
+  "output": "CMakeFiles\\test.dir\\Src\\fnc.c.obj"
+},
+{
+  "directory": "C:/Users/Shiva/Documents/ST/VSCODE_F401-1/build/debug",
   "command": "C:\\ST\\STM32CubeCLT_1.16.0\\GNU-tools-for-STM32\\bin\\arm-none-eabi-gcc.exe -DDEBUG -IC:/Users/Shiva/Documents/ST/VSCODE_F401-1/Inc -IC:/Users/Shiva/Documents/ST/VSCODE_F401-1/CMSIS -fdata-sections -ffunction-sections -Wl,--gc-sections -g -std=gnu11 -mthumb -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -Wall -Wextra -Wpedantic -Wno-unused-parameter -Og -g3 -ggdb -o CMakeFiles\\test.dir\\Src\\main.c.obj -c C:\\Users\\Shiva\\Documents\\ST\\VSCODE_F401-1\\Src\\main.c",
   "file": "C:\\Users\\Shiva\\Documents\\ST\\VSCODE_F401-1\\Src\\main.c",
   "output": "CMakeFiles\\test.dir\\Src\\main.c.obj"

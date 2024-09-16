@@ -313,6 +313,26 @@ Discarded input sections
  .debug_frame   0x00000000       0x20 C:/ST/STM32CubeCLT_1.16.0/GNU-tools-for-STM32/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc.a(libc_a-errno.o)
  .ARM.attributes
                 0x00000000       0x34 C:/ST/STM32CubeCLT_1.16.0/GNU-tools-for-STM32/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc.a(libc_a-errno.o)
+ .group         0x00000000        0xc CMakeFiles/test.dir/Src/fnc.c.obj
+ .group         0x00000000        0xc CMakeFiles/test.dir/Src/fnc.c.obj
+ .group         0x00000000        0xc CMakeFiles/test.dir/Src/fnc.c.obj
+ .group         0x00000000        0xc CMakeFiles/test.dir/Src/fnc.c.obj
+ .group         0x00000000        0xc CMakeFiles/test.dir/Src/fnc.c.obj
+ .group         0x00000000        0xc CMakeFiles/test.dir/Src/fnc.c.obj
+ .group         0x00000000        0xc CMakeFiles/test.dir/Src/fnc.c.obj
+ .group         0x00000000        0xc CMakeFiles/test.dir/Src/fnc.c.obj
+ .group         0x00000000        0xc CMakeFiles/test.dir/Src/fnc.c.obj
+ .group         0x00000000        0xc CMakeFiles/test.dir/Src/fnc.c.obj
+ .group         0x00000000        0xc CMakeFiles/test.dir/Src/fnc.c.obj
+ .group         0x00000000        0xc CMakeFiles/test.dir/Src/fnc.c.obj
+ .group         0x00000000        0xc CMakeFiles/test.dir/Src/fnc.c.obj
+ .group         0x00000000        0xc CMakeFiles/test.dir/Src/fnc.c.obj
+ .group         0x00000000        0xc CMakeFiles/test.dir/Src/fnc.c.obj
+ .group         0x00000000        0xc CMakeFiles/test.dir/Src/fnc.c.obj
+ .group         0x00000000        0xc CMakeFiles/test.dir/Src/fnc.c.obj
+ .text          0x00000000        0x0 CMakeFiles/test.dir/Src/fnc.c.obj
+ .data          0x00000000        0x0 CMakeFiles/test.dir/Src/fnc.c.obj
+ .bss           0x00000000        0x0 CMakeFiles/test.dir/Src/fnc.c.obj
  .group         0x00000000        0xc CMakeFiles/test.dir/Src/main.c.obj
  .group         0x00000000        0xc CMakeFiles/test.dir/Src/main.c.obj
  .group         0x00000000        0xc CMakeFiles/test.dir/Src/main.c.obj
@@ -333,6 +353,23 @@ Discarded input sections
  .text          0x00000000        0x0 CMakeFiles/test.dir/Src/main.c.obj
  .data          0x00000000        0x0 CMakeFiles/test.dir/Src/main.c.obj
  .bss           0x00000000        0x0 CMakeFiles/test.dir/Src/main.c.obj
+ .debug_macro   0x00000000      0xaa8 CMakeFiles/test.dir/Src/main.c.obj
+ .debug_macro   0x00000000       0x22 CMakeFiles/test.dir/Src/main.c.obj
+ .debug_macro   0x00000000       0x22 CMakeFiles/test.dir/Src/main.c.obj
+ .debug_macro   0x00000000       0x8e CMakeFiles/test.dir/Src/main.c.obj
+ .debug_macro   0x00000000       0x51 CMakeFiles/test.dir/Src/main.c.obj
+ .debug_macro   0x00000000      0x103 CMakeFiles/test.dir/Src/main.c.obj
+ .debug_macro   0x00000000       0x6a CMakeFiles/test.dir/Src/main.c.obj
+ .debug_macro   0x00000000      0x1df CMakeFiles/test.dir/Src/main.c.obj
+ .debug_macro   0x00000000       0x34 CMakeFiles/test.dir/Src/main.c.obj
+ .debug_macro   0x00000000       0x28 CMakeFiles/test.dir/Src/main.c.obj
+ .debug_macro   0x00000000       0x1c CMakeFiles/test.dir/Src/main.c.obj
+ .debug_macro   0x00000000       0x22 CMakeFiles/test.dir/Src/main.c.obj
+ .debug_macro   0x00000000       0xfb CMakeFiles/test.dir/Src/main.c.obj
+ .debug_macro   0x00000000     0x1011 CMakeFiles/test.dir/Src/main.c.obj
+ .debug_macro   0x00000000      0x11f CMakeFiles/test.dir/Src/main.c.obj
+ .debug_macro   0x00000000     0xb86c CMakeFiles/test.dir/Src/main.c.obj
+ .debug_macro   0x00000000       0x6d CMakeFiles/test.dir/Src/main.c.obj
  .group         0x00000000        0xc CMakeFiles/test.dir/Src/syscall.c.obj
  .group         0x00000000        0xc CMakeFiles/test.dir/Src/syscall.c.obj
  .group         0x00000000        0xc CMakeFiles/test.dir/Src/syscall.c.obj
@@ -559,6 +596,7 @@ LOAD C:/ST/STM32CubeCLT_1.16.0/GNU-tools-for-STM32/bin/../lib/gcc/arm-none-eabi/
 LOAD C:/ST/STM32CubeCLT_1.16.0/GNU-tools-for-STM32/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libstdc++.a
 LOAD C:/ST/STM32CubeCLT_1.16.0/GNU-tools-for-STM32/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libsupc++.a
 END GROUP
+LOAD CMakeFiles/test.dir/Src/fnc.c.obj
 LOAD CMakeFiles/test.dir/Src/main.c.obj
 LOAD CMakeFiles/test.dir/Src/syscall.c.obj
 LOAD CMakeFiles/test.dir/Src/sysmem.c.obj
@@ -586,7 +624,7 @@ LOAD C:/ST/STM32CubeCLT_1.16.0/GNU-tools-for-STM32/bin/../lib/gcc/arm-none-eabi/
                 0x08000000                g_pfnVectors
                 0x0800011c                        . = ALIGN (0x4)
 
-.text           0x0800011c      0x380
+.text           0x0800011c      0x378
                 0x0800011c                        . = ALIGN (0x4)
  *(.text)
  .text          0x0800011c       0x40 C:/ST/STM32CubeCLT_1.16.0/GNU-tools-for-STM32/bin/../lib/gcc/arm-none-eabi/12.3.1/thumb/v7e-m+fp/hard/crtbegin.o
@@ -610,164 +648,164 @@ LOAD C:/ST/STM32CubeCLT_1.16.0/GNU-tools-for-STM32/bin/../lib/gcc/arm-none-eabi/
  .text.__register_exitproc
                 0x080001f0       0x80 C:/ST/STM32CubeCLT_1.16.0/GNU-tools-for-STM32/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc.a(libc_a-__atexit.o)
                 0x080001f0                __register_exitproc
- .text.PC13LED  0x08000270       0x38 CMakeFiles/test.dir/Src/main.c.obj
-                0x08000270                PC13LED
- .text.PC13LEDHi
-                0x080002a8       0x10 CMakeFiles/test.dir/Src/main.c.obj
-                0x080002a8                PC13LEDHi
- .text.PC13LEDLow
-                0x080002b8       0x10 CMakeFiles/test.dir/Src/main.c.obj
-                0x080002b8                PC13LEDLow
  .text.ClockInit
-                0x080002c8      0x13c CMakeFiles/test.dir/Src/main.c.obj
-                0x080002c8                ClockInit
- .text.main     0x08000404       0x2c CMakeFiles/test.dir/Src/main.c.obj
-                0x08000404                main
+                0x08000270      0x134 CMakeFiles/test.dir/Src/fnc.c.obj
+                0x08000270                ClockInit
+ .text.PC13LED  0x080003a4       0x38 CMakeFiles/test.dir/Src/main.c.obj
+                0x080003a4                PC13LED
+ .text.PC13LEDHi
+                0x080003dc       0x10 CMakeFiles/test.dir/Src/main.c.obj
+                0x080003dc                PC13LEDHi
+ .text.PC13LEDLow
+                0x080003ec       0x10 CMakeFiles/test.dir/Src/main.c.obj
+                0x080003ec                PC13LEDLow
+ .text.main     0x080003fc       0x2c CMakeFiles/test.dir/Src/main.c.obj
+                0x080003fc                main
  .text.Reset_Handler
-                0x08000430       0x50 CMakeFiles/test.dir/Startup/startup_stm32f401ccux.s.obj
-                0x08000430                Reset_Handler
+                0x08000428       0x50 CMakeFiles/test.dir/Startup/startup_stm32f401ccux.s.obj
+                0x08000428                Reset_Handler
  .text.Default_Handler
-                0x08000480        0x2 CMakeFiles/test.dir/Startup/startup_stm32f401ccux.s.obj
-                0x08000480                EXTI2_IRQHandler
-                0x08000480                SPI4_IRQHandler
-                0x08000480                TIM1_CC_IRQHandler
-                0x08000480                DMA2_Stream5_IRQHandler
-                0x08000480                HardFault_Handler
-                0x08000480                DMA1_Stream5_IRQHandler
-                0x08000480                SysTick_Handler
-                0x08000480                SDIO_IRQHandler
-                0x08000480                TAMP_STAMP_IRQHandler
-                0x08000480                PendSV_Handler
-                0x08000480                NMI_Handler
-                0x08000480                EXTI3_IRQHandler
-                0x08000480                TIM1_UP_TIM10_IRQHandler
-                0x08000480                I2C3_ER_IRQHandler
-                0x08000480                EXTI18_OTG_FS_WKUP_IRQHandler
-                0x08000480                EXTI0_IRQHandler
-                0x08000480                I2C2_EV_IRQHandler
-                0x08000480                DMA1_Stream2_IRQHandler
-                0x08000480                UsageFault_Handler
-                0x08000480                DMA2_Stream2_IRQHandler
-                0x08000480                SPI1_IRQHandler
-                0x08000480                TIM1_BRK_TIM9_IRQHandler
-                0x08000480                DMA2_Stream3_IRQHandler
-                0x08000480                USART6_IRQHandler
-                0x08000480                DMA2_Stream0_IRQHandler
-                0x08000480                TIM4_IRQHandler
-                0x08000480                I2C1_EV_IRQHandler
-                0x08000480                DMA1_Stream6_IRQHandler
-                0x08000480                DMA1_Stream1_IRQHandler
-                0x08000480                TIM3_IRQHandler
-                0x08000480                RCC_IRQHandler
-                0x08000480                Default_Handler
-                0x08000480                EXTI15_10_IRQHandler
-                0x08000480                ADC_IRQHandler
-                0x08000480                DMA1_Stream7_IRQHandler
-                0x08000480                TIM5_IRQHandler
-                0x08000480                DMA2_Stream7_IRQHandler
-                0x08000480                I2C3_EV_IRQHandler
-                0x08000480                EXTI9_5_IRQHandler
-                0x08000480                SPI2_IRQHandler
-                0x08000480                MemManage_Handler
-                0x08000480                DMA1_Stream0_IRQHandler
-                0x08000480                SVC_Handler
-                0x08000480                EXTI4_IRQHandler
-                0x08000480                EXTI22_RTC_WKUP_IRQHandler
-                0x08000480                TIM2_IRQHandler
-                0x08000480                EXTI16_PVD_IRQHandler
-                0x08000480                TIM1_TRG_COM_TIM11_IRQHandler
-                0x08000480                EXTI1_IRQHandler
-                0x08000480                EXTI17_RTC_Alarm_IRQHandler
-                0x08000480                USART2_IRQHandler
-                0x08000480                I2C2_ER_IRQHandler
-                0x08000480                DMA2_Stream1_IRQHandler
-                0x08000480                FLASH_IRQHandler
-                0x08000480                DMA2_Stream4_IRQHandler
-                0x08000480                BusFault_Handler
-                0x08000480                USART1_IRQHandler
-                0x08000480                OTG_FS_IRQHandler
-                0x08000480                SPI3_IRQHandler
-                0x08000480                DMA1_Stream4_IRQHandler
-                0x08000480                I2C1_ER_IRQHandler
-                0x08000480                DMA2_Stream6_IRQHandler
-                0x08000480                DMA1_Stream3_IRQHandler
+                0x08000478        0x2 CMakeFiles/test.dir/Startup/startup_stm32f401ccux.s.obj
+                0x08000478                EXTI2_IRQHandler
+                0x08000478                SPI4_IRQHandler
+                0x08000478                TIM1_CC_IRQHandler
+                0x08000478                DMA2_Stream5_IRQHandler
+                0x08000478                HardFault_Handler
+                0x08000478                DMA1_Stream5_IRQHandler
+                0x08000478                SysTick_Handler
+                0x08000478                SDIO_IRQHandler
+                0x08000478                TAMP_STAMP_IRQHandler
+                0x08000478                PendSV_Handler
+                0x08000478                NMI_Handler
+                0x08000478                EXTI3_IRQHandler
+                0x08000478                TIM1_UP_TIM10_IRQHandler
+                0x08000478                I2C3_ER_IRQHandler
+                0x08000478                EXTI18_OTG_FS_WKUP_IRQHandler
+                0x08000478                EXTI0_IRQHandler
+                0x08000478                I2C2_EV_IRQHandler
+                0x08000478                DMA1_Stream2_IRQHandler
+                0x08000478                UsageFault_Handler
+                0x08000478                DMA2_Stream2_IRQHandler
+                0x08000478                SPI1_IRQHandler
+                0x08000478                TIM1_BRK_TIM9_IRQHandler
+                0x08000478                DMA2_Stream3_IRQHandler
+                0x08000478                USART6_IRQHandler
+                0x08000478                DMA2_Stream0_IRQHandler
+                0x08000478                TIM4_IRQHandler
+                0x08000478                I2C1_EV_IRQHandler
+                0x08000478                DMA1_Stream6_IRQHandler
+                0x08000478                DMA1_Stream1_IRQHandler
+                0x08000478                TIM3_IRQHandler
+                0x08000478                RCC_IRQHandler
+                0x08000478                Default_Handler
+                0x08000478                EXTI15_10_IRQHandler
+                0x08000478                ADC_IRQHandler
+                0x08000478                DMA1_Stream7_IRQHandler
+                0x08000478                TIM5_IRQHandler
+                0x08000478                DMA2_Stream7_IRQHandler
+                0x08000478                I2C3_EV_IRQHandler
+                0x08000478                EXTI9_5_IRQHandler
+                0x08000478                SPI2_IRQHandler
+                0x08000478                MemManage_Handler
+                0x08000478                DMA1_Stream0_IRQHandler
+                0x08000478                SVC_Handler
+                0x08000478                EXTI4_IRQHandler
+                0x08000478                EXTI22_RTC_WKUP_IRQHandler
+                0x08000478                TIM2_IRQHandler
+                0x08000478                EXTI16_PVD_IRQHandler
+                0x08000478                TIM1_TRG_COM_TIM11_IRQHandler
+                0x08000478                EXTI1_IRQHandler
+                0x08000478                EXTI17_RTC_Alarm_IRQHandler
+                0x08000478                USART2_IRQHandler
+                0x08000478                I2C2_ER_IRQHandler
+                0x08000478                DMA2_Stream1_IRQHandler
+                0x08000478                FLASH_IRQHandler
+                0x08000478                DMA2_Stream4_IRQHandler
+                0x08000478                BusFault_Handler
+                0x08000478                USART1_IRQHandler
+                0x08000478                OTG_FS_IRQHandler
+                0x08000478                SPI3_IRQHandler
+                0x08000478                DMA1_Stream4_IRQHandler
+                0x08000478                I2C1_ER_IRQHandler
+                0x08000478                DMA2_Stream6_IRQHandler
+                0x08000478                DMA1_Stream3_IRQHandler
  *(.glue_7)
- .glue_7        0x08000482        0x0 linker stubs
+ .glue_7        0x0800047a        0x0 linker stubs
  *(.glue_7t)
- .glue_7t       0x08000482        0x0 linker stubs
+ .glue_7t       0x0800047a        0x0 linker stubs
  *(.eh_frame)
- *fill*         0x08000482        0x2 
- .eh_frame      0x08000484        0x0 C:/ST/STM32CubeCLT_1.16.0/GNU-tools-for-STM32/bin/../lib/gcc/arm-none-eabi/12.3.1/thumb/v7e-m+fp/hard/crtbegin.o
+ *fill*         0x0800047a        0x2 
+ .eh_frame      0x0800047c        0x0 C:/ST/STM32CubeCLT_1.16.0/GNU-tools-for-STM32/bin/../lib/gcc/arm-none-eabi/12.3.1/thumb/v7e-m+fp/hard/crtbegin.o
  *(.init)
- .init          0x08000484        0x4 C:/ST/STM32CubeCLT_1.16.0/GNU-tools-for-STM32/bin/../lib/gcc/arm-none-eabi/12.3.1/thumb/v7e-m+fp/hard/crti.o
-                0x08000484                _init
- .init          0x08000488        0x8 C:/ST/STM32CubeCLT_1.16.0/GNU-tools-for-STM32/bin/../lib/gcc/arm-none-eabi/12.3.1/thumb/v7e-m+fp/hard/crtn.o
+ .init          0x0800047c        0x4 C:/ST/STM32CubeCLT_1.16.0/GNU-tools-for-STM32/bin/../lib/gcc/arm-none-eabi/12.3.1/thumb/v7e-m+fp/hard/crti.o
+                0x0800047c                _init
+ .init          0x08000480        0x8 C:/ST/STM32CubeCLT_1.16.0/GNU-tools-for-STM32/bin/../lib/gcc/arm-none-eabi/12.3.1/thumb/v7e-m+fp/hard/crtn.o
  *(.fini)
- .fini          0x08000490        0x4 C:/ST/STM32CubeCLT_1.16.0/GNU-tools-for-STM32/bin/../lib/gcc/arm-none-eabi/12.3.1/thumb/v7e-m+fp/hard/crti.o
-                0x08000490                _fini
- .fini          0x08000494        0x8 C:/ST/STM32CubeCLT_1.16.0/GNU-tools-for-STM32/bin/../lib/gcc/arm-none-eabi/12.3.1/thumb/v7e-m+fp/hard/crtn.o
-                0x0800049c                        . = ALIGN (0x4)
-                0x0800049c                        _etext = .
+ .fini          0x08000488        0x4 C:/ST/STM32CubeCLT_1.16.0/GNU-tools-for-STM32/bin/../lib/gcc/arm-none-eabi/12.3.1/thumb/v7e-m+fp/hard/crti.o
+                0x08000488                _fini
+ .fini          0x0800048c        0x8 C:/ST/STM32CubeCLT_1.16.0/GNU-tools-for-STM32/bin/../lib/gcc/arm-none-eabi/12.3.1/thumb/v7e-m+fp/hard/crtn.o
+                0x08000494                        . = ALIGN (0x4)
+                0x08000494                        _etext = .
 
-.vfp11_veneer   0x0800049c        0x0
- .vfp11_veneer  0x0800049c        0x0 linker stubs
+.vfp11_veneer   0x08000494        0x0
+ .vfp11_veneer  0x08000494        0x0 linker stubs
 
-.v4_bx          0x0800049c        0x0
- .v4_bx         0x0800049c        0x0 linker stubs
+.v4_bx          0x08000494        0x0
+ .v4_bx         0x08000494        0x0 linker stubs
 
-.iplt           0x0800049c        0x0
- .iplt          0x0800049c        0x0 C:/ST/STM32CubeCLT_1.16.0/GNU-tools-for-STM32/bin/../lib/gcc/arm-none-eabi/12.3.1/thumb/v7e-m+fp/hard/crtbegin.o
+.iplt           0x08000494        0x0
+ .iplt          0x08000494        0x0 C:/ST/STM32CubeCLT_1.16.0/GNU-tools-for-STM32/bin/../lib/gcc/arm-none-eabi/12.3.1/thumb/v7e-m+fp/hard/crtbegin.o
 
-.rodata         0x0800049c        0x0
-                0x0800049c                        . = ALIGN (0x4)
+.rodata         0x08000494        0x0
+                0x08000494                        . = ALIGN (0x4)
  *(.rodata)
  *(.rodata*)
-                0x0800049c                        . = ALIGN (0x4)
+                0x08000494                        . = ALIGN (0x4)
 
-.ARM.extab      0x0800049c        0x0
-                0x0800049c                        . = ALIGN (0x4)
+.ARM.extab      0x08000494        0x0
+                0x08000494                        . = ALIGN (0x4)
  *(.ARM.extab* .gnu.linkonce.armextab.*)
-                0x0800049c                        . = ALIGN (0x4)
+                0x08000494                        . = ALIGN (0x4)
 
-.ARM            0x0800049c        0x0
-                0x0800049c                        . = ALIGN (0x4)
-                0x0800049c                        __exidx_start = .
+.ARM            0x08000494        0x0
+                0x08000494                        . = ALIGN (0x4)
+                0x08000494                        __exidx_start = .
  *(.ARM.exidx*)
-                0x0800049c                        __exidx_end = .
-                0x0800049c                        . = ALIGN (0x4)
+                0x08000494                        __exidx_end = .
+                0x08000494                        . = ALIGN (0x4)
 
-.preinit_array  0x0800049c        0x0
-                0x0800049c                        . = ALIGN (0x4)
-                0x0800049c                        PROVIDE (__preinit_array_start = .)
+.preinit_array  0x08000494        0x0
+                0x08000494                        . = ALIGN (0x4)
+                0x08000494                        PROVIDE (__preinit_array_start = .)
  *(.preinit_array*)
-                0x0800049c                        PROVIDE (__preinit_array_end = .)
-                0x0800049c                        . = ALIGN (0x4)
+                0x08000494                        PROVIDE (__preinit_array_end = .)
+                0x08000494                        . = ALIGN (0x4)
 
-.init_array     0x0800049c        0x8
-                0x0800049c                        . = ALIGN (0x4)
-                0x0800049c                        PROVIDE (__init_array_start = .)
+.init_array     0x08000494        0x8
+                0x08000494                        . = ALIGN (0x4)
+                0x08000494                        PROVIDE (__init_array_start = .)
  *(SORT_BY_NAME(.init_array.*))
  .init_array.00000
-                0x0800049c        0x4 C:/ST/STM32CubeCLT_1.16.0/GNU-tools-for-STM32/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc.a(libc_a-__call_atexit.o)
+                0x08000494        0x4 C:/ST/STM32CubeCLT_1.16.0/GNU-tools-for-STM32/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc.a(libc_a-__call_atexit.o)
  *(.init_array*)
- .init_array    0x080004a0        0x4 C:/ST/STM32CubeCLT_1.16.0/GNU-tools-for-STM32/bin/../lib/gcc/arm-none-eabi/12.3.1/thumb/v7e-m+fp/hard/crtbegin.o
-                0x080004a4                        PROVIDE (__init_array_end = .)
-                0x080004a4                        . = ALIGN (0x4)
+ .init_array    0x08000498        0x4 C:/ST/STM32CubeCLT_1.16.0/GNU-tools-for-STM32/bin/../lib/gcc/arm-none-eabi/12.3.1/thumb/v7e-m+fp/hard/crtbegin.o
+                0x0800049c                        PROVIDE (__init_array_end = .)
+                0x0800049c                        . = ALIGN (0x4)
 
-.fini_array     0x080004a4        0x4
-                0x080004a4                        . = ALIGN (0x4)
-                0x080004a4                        PROVIDE (__fini_array_start = .)
+.fini_array     0x0800049c        0x4
+                0x0800049c                        . = ALIGN (0x4)
+                0x0800049c                        PROVIDE (__fini_array_start = .)
  *(SORT_BY_NAME(.fini_array.*))
  *(.fini_array*)
- .fini_array    0x080004a4        0x4 C:/ST/STM32CubeCLT_1.16.0/GNU-tools-for-STM32/bin/../lib/gcc/arm-none-eabi/12.3.1/thumb/v7e-m+fp/hard/crtbegin.o
-                0x080004a8                        PROVIDE (__fini_array_end = .)
-                0x080004a8                        . = ALIGN (0x4)
-                0x080004a8                        _sidata = LOADADDR (.data)
+ .fini_array    0x0800049c        0x4 C:/ST/STM32CubeCLT_1.16.0/GNU-tools-for-STM32/bin/../lib/gcc/arm-none-eabi/12.3.1/thumb/v7e-m+fp/hard/crtbegin.o
+                0x080004a0                        PROVIDE (__fini_array_end = .)
+                0x080004a0                        . = ALIGN (0x4)
+                0x080004a0                        _sidata = LOADADDR (.data)
 
-.rel.dyn        0x080004a8        0x0
- .rel.iplt      0x080004a8        0x0 C:/ST/STM32CubeCLT_1.16.0/GNU-tools-for-STM32/bin/../lib/gcc/arm-none-eabi/12.3.1/thumb/v7e-m+fp/hard/crtbegin.o
+.rel.dyn        0x080004a0        0x0
+ .rel.iplt      0x080004a0        0x0 C:/ST/STM32CubeCLT_1.16.0/GNU-tools-for-STM32/bin/../lib/gcc/arm-none-eabi/12.3.1/thumb/v7e-m+fp/hard/crtbegin.o
 
-.data           0x20000000        0x4 load address 0x080004a8
+.data           0x20000000        0x4 load address 0x080004a0
                 0x20000000                        . = ALIGN (0x4)
                 0x20000000                        _sdata = .
  *(.data)
@@ -780,11 +818,11 @@ LOAD C:/ST/STM32CubeCLT_1.16.0/GNU-tools-for-STM32/bin/../lib/gcc/arm-none-eabi/
                 0x20000004                        . = ALIGN (0x4)
                 0x20000004                        _edata = .
 
-.igot.plt       0x20000004        0x0 load address 0x080004ac
+.igot.plt       0x20000004        0x0 load address 0x080004a4
  .igot.plt      0x20000004        0x0 C:/ST/STM32CubeCLT_1.16.0/GNU-tools-for-STM32/bin/../lib/gcc/arm-none-eabi/12.3.1/thumb/v7e-m+fp/hard/crtbegin.o
                 0x20000004                        . = ALIGN (0x4)
 
-.bss            0x20000004      0x1b4 load address 0x080004ac
+.bss            0x20000004      0x1b4 load address 0x080004a4
                 0x20000004                        _sbss = .
                 0x20000004                        __bss_start__ = _sbss
  *(.bss)
@@ -805,7 +843,7 @@ LOAD C:/ST/STM32CubeCLT_1.16.0/GNU-tools-for-STM32/bin/../lib/gcc/arm-none-eabi/
                 0x200001b8                        __bss_end__ = _ebss
 
 ._user_heap_stack
-                0x200001b8      0x600 load address 0x080004ac
+                0x200001b8      0x600 load address 0x080004a4
                 0x200001b8                        . = ALIGN (0x8)
                 [!provide]                        PROVIDE (end = .)
                 0x200001b8                        PROVIDE (_end = .)
@@ -840,85 +878,99 @@ LOAD C:/ST/STM32CubeCLT_1.16.0/GNU-tools-for-STM32/bin/../lib/gcc/arm-none-eabi/
  .ARM.attributes
                 0x0000015a       0x34 C:/ST/STM32CubeCLT_1.16.0/GNU-tools-for-STM32/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc.a(libc_a-__atexit.o)
  .ARM.attributes
-                0x0000018e       0x34 CMakeFiles/test.dir/Src/main.c.obj
+                0x0000018e       0x34 CMakeFiles/test.dir/Src/fnc.c.obj
  .ARM.attributes
-                0x000001c2       0x21 CMakeFiles/test.dir/Startup/startup_stm32f401ccux.s.obj
+                0x000001c2       0x34 CMakeFiles/test.dir/Src/main.c.obj
  .ARM.attributes
-                0x000001e3       0x22 C:/ST/STM32CubeCLT_1.16.0/GNU-tools-for-STM32/bin/../lib/gcc/arm-none-eabi/12.3.1/thumb/v7e-m+fp/hard/crtn.o
+                0x000001f6       0x21 CMakeFiles/test.dir/Startup/startup_stm32f401ccux.s.obj
+ .ARM.attributes
+                0x00000217       0x22 C:/ST/STM32CubeCLT_1.16.0/GNU-tools-for-STM32/bin/../lib/gcc/arm-none-eabi/12.3.1/thumb/v7e-m+fp/hard/crtn.o
 OUTPUT(test.elf elf32-littlearm)
 LOAD linker stubs
 LOAD C:/ST/STM32CubeCLT_1.16.0/GNU-tools-for-STM32/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc.a
 LOAD C:/ST/STM32CubeCLT_1.16.0/GNU-tools-for-STM32/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libm.a
 LOAD C:/ST/STM32CubeCLT_1.16.0/GNU-tools-for-STM32/bin/../lib/gcc/arm-none-eabi/12.3.1/thumb/v7e-m+fp/hard\libgcc.a
 
-.debug_frame    0x00000000      0x234
+.debug_frame    0x00000000      0x244
  .debug_frame   0x00000000       0x2c C:/ST/STM32CubeCLT_1.16.0/GNU-tools-for-STM32/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc.a(libc_a-init.o)
  .debug_frame   0x0000002c       0xb0 C:/ST/STM32CubeCLT_1.16.0/GNU-tools-for-STM32/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc.a(libc_a-lock.o)
  .debug_frame   0x000000dc       0x58 C:/ST/STM32CubeCLT_1.16.0/GNU-tools-for-STM32/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc.a(libc_a-__call_atexit.o)
  .debug_frame   0x00000134       0x20 C:/ST/STM32CubeCLT_1.16.0/GNU-tools-for-STM32/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc.a(libc_a-atexit.o)
  .debug_frame   0x00000154       0x38 C:/ST/STM32CubeCLT_1.16.0/GNU-tools-for-STM32/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc.a(libc_a-fini.o)
  .debug_frame   0x0000018c       0x34 C:/ST/STM32CubeCLT_1.16.0/GNU-tools-for-STM32/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc.a(libc_a-__atexit.o)
- .debug_frame   0x000001c0       0x74 CMakeFiles/test.dir/Src/main.c.obj
+ .debug_frame   0x000001c0       0x2c CMakeFiles/test.dir/Src/fnc.c.obj
+ .debug_frame   0x000001ec       0x58 CMakeFiles/test.dir/Src/main.c.obj
 
-.debug_info     0x00000000      0x43a
- .debug_info    0x00000000      0x40a CMakeFiles/test.dir/Src/main.c.obj
- .debug_info    0x0000040a       0x30 CMakeFiles/test.dir/Startup/startup_stm32f401ccux.s.obj
+.debug_info     0x00000000      0x681
+ .debug_info    0x00000000      0x2cc CMakeFiles/test.dir/Src/fnc.c.obj
+ .debug_info    0x000002cc      0x385 CMakeFiles/test.dir/Src/main.c.obj
+ .debug_info    0x00000651       0x30 CMakeFiles/test.dir/Startup/startup_stm32f401ccux.s.obj
 
-.debug_abbrev   0x00000000      0x18c
- .debug_abbrev  0x00000000      0x168 CMakeFiles/test.dir/Src/main.c.obj
- .debug_abbrev  0x00000168       0x24 CMakeFiles/test.dir/Startup/startup_stm32f401ccux.s.obj
+.debug_abbrev   0x00000000      0x237
+ .debug_abbrev  0x00000000       0xf9 CMakeFiles/test.dir/Src/fnc.c.obj
+ .debug_abbrev  0x000000f9      0x11a CMakeFiles/test.dir/Src/main.c.obj
+ .debug_abbrev  0x00000213       0x24 CMakeFiles/test.dir/Startup/startup_stm32f401ccux.s.obj
+
+.debug_aranges  0x00000000       0x80
+ .debug_aranges
+                0x00000000       0x20 CMakeFiles/test.dir/Src/fnc.c.obj
+ .debug_aranges
+                0x00000020       0x38 CMakeFiles/test.dir/Src/main.c.obj
+ .debug_aranges
+                0x00000058       0x28 CMakeFiles/test.dir/Startup/startup_stm32f401ccux.s.obj
+
+.debug_rnglists
+                0x00000000       0x5e
+ .debug_rnglists
+                0x00000000       0x14 CMakeFiles/test.dir/Src/fnc.c.obj
+ .debug_rnglists
+                0x00000014       0x31 CMakeFiles/test.dir/Src/main.c.obj
+ .debug_rnglists
+                0x00000045       0x19 CMakeFiles/test.dir/Startup/startup_stm32f401ccux.s.obj
+
+.debug_macro    0x00000000     0xdc81
+ .debug_macro   0x00000000       0xe1 CMakeFiles/test.dir/Src/fnc.c.obj
+ .debug_macro   0x000000e1      0xaa8 CMakeFiles/test.dir/Src/fnc.c.obj
+ .debug_macro   0x00000b89       0x22 CMakeFiles/test.dir/Src/fnc.c.obj
+ .debug_macro   0x00000bab       0x22 CMakeFiles/test.dir/Src/fnc.c.obj
+ .debug_macro   0x00000bcd       0x8e CMakeFiles/test.dir/Src/fnc.c.obj
+ .debug_macro   0x00000c5b       0x51 CMakeFiles/test.dir/Src/fnc.c.obj
+ .debug_macro   0x00000cac      0x103 CMakeFiles/test.dir/Src/fnc.c.obj
+ .debug_macro   0x00000daf       0x6a CMakeFiles/test.dir/Src/fnc.c.obj
+ .debug_macro   0x00000e19      0x1df CMakeFiles/test.dir/Src/fnc.c.obj
+ .debug_macro   0x00000ff8       0x34 CMakeFiles/test.dir/Src/fnc.c.obj
+ .debug_macro   0x0000102c       0x28 CMakeFiles/test.dir/Src/fnc.c.obj
+ .debug_macro   0x00001054       0x1c CMakeFiles/test.dir/Src/fnc.c.obj
+ .debug_macro   0x00001070       0x22 CMakeFiles/test.dir/Src/fnc.c.obj
+ .debug_macro   0x00001092       0xfb CMakeFiles/test.dir/Src/fnc.c.obj
+ .debug_macro   0x0000118d     0x1011 CMakeFiles/test.dir/Src/fnc.c.obj
+ .debug_macro   0x0000219e      0x11f CMakeFiles/test.dir/Src/fnc.c.obj
+ .debug_macro   0x000022bd     0xb86c CMakeFiles/test.dir/Src/fnc.c.obj
+ .debug_macro   0x0000db29       0x6d CMakeFiles/test.dir/Src/fnc.c.obj
+ .debug_macro   0x0000db96       0xeb CMakeFiles/test.dir/Src/main.c.obj
+
+.debug_line     0x00000000      0xa37
+ .debug_line    0x00000000      0x549 CMakeFiles/test.dir/Src/fnc.c.obj
+ .debug_line    0x00000549      0x473 CMakeFiles/test.dir/Src/main.c.obj
+ .debug_line    0x000009bc       0x7b CMakeFiles/test.dir/Startup/startup_stm32f401ccux.s.obj
+
+.debug_str      0x00000000    0x4f82d
+ .debug_str     0x00000000    0x4f733 CMakeFiles/test.dir/Src/fnc.c.obj
+                              0x4f8a1 (size before relaxing)
+ .debug_str     0x0004f733       0x94 CMakeFiles/test.dir/Src/main.c.obj
+                              0x4f8ce (size before relaxing)
+ .debug_str     0x0004f7c7       0x66 CMakeFiles/test.dir/Startup/startup_stm32f401ccux.s.obj
+                                 0x9c (size before relaxing)
+
+.comment        0x00000000       0x43
+ .comment       0x00000000       0x43 CMakeFiles/test.dir/Src/fnc.c.obj
+                                 0x44 (size before relaxing)
+ .comment       0x00000043       0x44 CMakeFiles/test.dir/Src/main.c.obj
 
 .debug_loclists
                 0x00000000       0x36
  .debug_loclists
                 0x00000000       0x36 CMakeFiles/test.dir/Src/main.c.obj
-
-.debug_aranges  0x00000000       0x68
- .debug_aranges
-                0x00000000       0x40 CMakeFiles/test.dir/Src/main.c.obj
- .debug_aranges
-                0x00000040       0x28 CMakeFiles/test.dir/Startup/startup_stm32f401ccux.s.obj
-
-.debug_rnglists
-                0x00000000       0x51
- .debug_rnglists
-                0x00000000       0x38 CMakeFiles/test.dir/Src/main.c.obj
- .debug_rnglists
-                0x00000038       0x19 CMakeFiles/test.dir/Startup/startup_stm32f401ccux.s.obj
-
-.debug_macro    0x00000000     0xdb96
- .debug_macro   0x00000000       0xe1 CMakeFiles/test.dir/Src/main.c.obj
- .debug_macro   0x000000e1      0xaa8 CMakeFiles/test.dir/Src/main.c.obj
- .debug_macro   0x00000b89       0x22 CMakeFiles/test.dir/Src/main.c.obj
- .debug_macro   0x00000bab       0x22 CMakeFiles/test.dir/Src/main.c.obj
- .debug_macro   0x00000bcd       0x8e CMakeFiles/test.dir/Src/main.c.obj
- .debug_macro   0x00000c5b       0x51 CMakeFiles/test.dir/Src/main.c.obj
- .debug_macro   0x00000cac      0x103 CMakeFiles/test.dir/Src/main.c.obj
- .debug_macro   0x00000daf       0x6a CMakeFiles/test.dir/Src/main.c.obj
- .debug_macro   0x00000e19      0x1df CMakeFiles/test.dir/Src/main.c.obj
- .debug_macro   0x00000ff8       0x34 CMakeFiles/test.dir/Src/main.c.obj
- .debug_macro   0x0000102c       0x28 CMakeFiles/test.dir/Src/main.c.obj
- .debug_macro   0x00001054       0x1c CMakeFiles/test.dir/Src/main.c.obj
- .debug_macro   0x00001070       0x22 CMakeFiles/test.dir/Src/main.c.obj
- .debug_macro   0x00001092       0xfb CMakeFiles/test.dir/Src/main.c.obj
- .debug_macro   0x0000118d     0x1011 CMakeFiles/test.dir/Src/main.c.obj
- .debug_macro   0x0000219e      0x11f CMakeFiles/test.dir/Src/main.c.obj
- .debug_macro   0x000022bd     0xb86c CMakeFiles/test.dir/Src/main.c.obj
- .debug_macro   0x0000db29       0x6d CMakeFiles/test.dir/Src/main.c.obj
-
-.debug_line     0x00000000      0x6c0
- .debug_line    0x00000000      0x645 CMakeFiles/test.dir/Src/main.c.obj
- .debug_line    0x00000645       0x7b CMakeFiles/test.dir/Startup/startup_stm32f401ccux.s.obj
-
-.debug_str      0x00000000    0x4f7f2
- .debug_str     0x00000000    0x4f78c CMakeFiles/test.dir/Src/main.c.obj
-                              0x4f8fa (size before relaxing)
- .debug_str     0x0004f78c       0x66 CMakeFiles/test.dir/Startup/startup_stm32f401ccux.s.obj
-                                 0x9c (size before relaxing)
-
-.comment        0x00000000       0x43
- .comment       0x00000000       0x43 CMakeFiles/test.dir/Src/main.c.obj
-                                 0x44 (size before relaxing)
 
 .debug_line_str
                 0x00000000       0x80

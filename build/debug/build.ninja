@@ -49,6 +49,14 @@ cmake_ninja_workdir = C$:/Users/Shiva/Documents/ST/VSCODE_F401-1/build/debug/
 
 build cmake_object_order_depends_target_test: phony || CMakeFiles/test.dir
 
+build CMakeFiles/test.dir/Src/fnc.c.obj: C_COMPILER__test_unscanned_Debug C$:/Users/Shiva/Documents/ST/VSCODE_F401-1/Src/fnc.c || cmake_object_order_depends_target_test
+  DEFINES = -DDEBUG
+  DEP_FILE = CMakeFiles\test.dir\Src\fnc.c.obj.d
+  FLAGS = -fdata-sections -ffunction-sections -Wl,--gc-sections -g -std=gnu11 -mthumb -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -Wall -Wextra -Wpedantic -Wno-unused-parameter -Og -g3 -ggdb
+  INCLUDES = -IC:/Users/Shiva/Documents/ST/VSCODE_F401-1/Inc -IC:/Users/Shiva/Documents/ST/VSCODE_F401-1/CMSIS
+  OBJECT_DIR = CMakeFiles\test.dir
+  OBJECT_FILE_DIR = CMakeFiles\test.dir\Src
+
 build CMakeFiles/test.dir/Src/main.c.obj: C_COMPILER__test_unscanned_Debug C$:/Users/Shiva/Documents/ST/VSCODE_F401-1/Src/main.c || cmake_object_order_depends_target_test
   DEFINES = -DDEBUG
   DEP_FILE = CMakeFiles\test.dir\Src\main.c.obj.d
@@ -89,7 +97,7 @@ build CMakeFiles/test.dir/Startup/startup_stm32f401ccux.s.obj: ASM_COMPILER__tes
 #############################################
 # Link the executable test.elf
 
-build test.elf: C_EXECUTABLE_LINKER__test_Debug CMakeFiles/test.dir/Src/main.c.obj CMakeFiles/test.dir/Src/syscall.c.obj CMakeFiles/test.dir/Src/sysmem.c.obj CMakeFiles/test.dir/Startup/startup_stm32f401ccux.s.obj
+build test.elf: C_EXECUTABLE_LINKER__test_Debug CMakeFiles/test.dir/Src/fnc.c.obj CMakeFiles/test.dir/Src/main.c.obj CMakeFiles/test.dir/Src/syscall.c.obj CMakeFiles/test.dir/Src/sysmem.c.obj CMakeFiles/test.dir/Startup/startup_stm32f401ccux.s.obj
   FLAGS = -fdata-sections -ffunction-sections -Wl,--gc-sections -g
   LINK_FLAGS = -TC:/Users/Shiva/Documents/ST/VSCODE_F401-1/stm32f401ccux_FLASH.ld -mthumb -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -Wl,-Map=test.map -u _printf_float --specs=nosys.specs -Wl,--start-group -lc -lm -lstdc++ -lsupc++ -Wl,--end-group -Wl,-z,max-page-size=8 -Wl,--print-memory-usage
   LINK_PATH = -LC:/Users/Shiva/Documents/ST/VSCODE_F401-1/test
